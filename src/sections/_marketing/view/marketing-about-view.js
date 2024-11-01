@@ -3,7 +3,7 @@
 import { _members, _brandsColor, _testimonials } from 'src/_mock';
 
 import MarketingAbout from '../about/marketing-about';
-import MarketingNewsletter from '../marketing-newsletter';
+// import MarketingNewsletter from '../marketing-newsletter';
 import MarketingTeamAbout from '../team/marketing-team-about';
 import MarketingAboutStory from '../about/marketing-about-story';
 import MarketingLandingFaqs from '../landing/marketing-landing-faqs';
@@ -36,7 +36,7 @@ export default function MarketingAboutView() {
 
       <MarketingLandingFreeSEO />
 
-      <MarketingNewsletter />
+      {/* <MarketingNewsletter /> */}
     </>
   );
 }

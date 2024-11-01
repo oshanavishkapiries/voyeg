@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import { _caseStudies, _testimonials, _marketingPosts } from 'src/_mock';
 
-import MarketingNewsletter from '../marketing-newsletter';
+// import MarketingNewsletter from '../marketing-newsletter';
 import MarketingCaseStudyList from '../list/marketing-case-study-list';
 import MarketingTestimonial from '../testimonial/marketing-testimonial';
 import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
@@ -42,7 +42,7 @@ export default function MarketingCaseStudiesView() {
 
       <MarketingLandingFreeSEO />
 
-      <MarketingNewsletter />
+      {/* <MarketingNewsletter /> */}
     </>
   );
 }

@@ -13,6 +13,7 @@ import { bgGradient } from 'src/theme/css';
 
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -49,16 +50,17 @@ export default function MarketingLandingHero() {
             }}
           >
             <Typography variant="overline" sx={{ color: 'secondary.main' }}>
-              Digital Marketing
+              SOFTWARE COMPANY AND
             </Typography>
 
-            <Typography variant="h1" sx={{ my: 3 }}>
-              Boosts Your Website Traffic
+            <Typography variant="h3" sx={{ my: 3 }}>
+              Reliable IT Support & Innovative Business Solutions for Growth
             </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-              venenatis ante odio sit amet eros.
+              Voyage Vibes specializes in providing software solutions and services for companies of
+              all sizes across various industry sectors, with a dedicated focus on the
+              travel industry.
             </Typography>
 
             <Stack
@@ -68,15 +70,19 @@ export default function MarketingLandingHero() {
               justifyContent={{ xs: 'center', md: 'unset' }}
               sx={{ mt: 5 }}
             >
-              <Button variant="contained" color="inherit" size="large">
-                Try For Free
-              </Button>
+              <Link href="/about">
+                <Button variant="contained" color="inherit" size="large">
+                  Learn more
+                </Button>
+              </Link>
 
               <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
-                <Fab size="medium" sx={{ mr: 1 }}>
-                  <Iconify width={24} icon="carbon:play" />
-                </Fab>
-                See Our Work
+                <Link href="/contact">
+                  <Fab size="medium" sx={{ mr: 1 }}>
+                    <Iconify width={24} icon="ic:sharp-phone" />
+                  </Fab>
+                </Link>
+                Contact Us
               </Stack>
             </Stack>
           </Grid>
@@ -87,7 +93,7 @@ export default function MarketingLandingHero() {
                 visibleByDefault
                 disabledEffect
                 alt="marketing market"
-                src="/assets/illustrations/illustration_marketing_market.svg"
+                src="/assets/illustrations/heroBannerLogo.svg"
               />
             </Grid>
           )}
