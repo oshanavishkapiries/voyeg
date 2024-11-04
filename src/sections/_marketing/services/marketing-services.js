@@ -1,26 +1,8 @@
-import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
 import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
-
-// ----------------------------------------------------------------------
-
-const LISTS = [
-  'First Class Flights',
-  '5 Star Accommodations',
-  'Inclusive Packages',
-  'Latest Model Vehicles',
-];
-
-// ----------------------------------------------------------------------
 
 export default function MarketingServices() {
   return (
@@ -32,48 +14,19 @@ export default function MarketingServices() {
     >
       <Grid container spacing={3} justifyContent="space-between" alignItems="center">
         <Grid xs={12} md={6} lg={5}>
-          <Image alt="services" src="/assets/illustrations/illustration_services.svg" />
+          <Image alt="Voyage Vibs Services" src="/assets/illustrations/illustration_services.svg" />
         </Grid>
 
         <Grid xs={12} md={6} lg={6}>
           <Stack spacing={3} sx={{ mb: 5 }}>
-            <Typography variant="h2">Offline SEO</Typography>
+            <Typography variant="h2">Our Comprehensive Digital Services</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Aenean commodo ligula eget dolor. Sed hendrerit. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer
-              lacinia.
+              At Voyage Vibs, we specialize in delivering innovative web and mobile development solutions. 
+              Our expertise in search engine optimization and digital marketing ensures your business stands out 
+              in the competitive digital landscape. Partner with us to elevate your brand and achieve your goals!
             </Typography>
-
-            <Stack spacing={2}>
-              {LISTS.map((text) => (
-                <Stack key={text} direction="row" alignItems="center">
-                  <Box
-                    component="span"
-                    sx={{
-                      mr: 2,
-                      width: 6,
-                      height: 6,
-                      borderRadius: '50%',
-                      bgcolor: 'primary.main',
-                    }}
-                  />
-                  {text}
-                </Stack>
-              ))}
-            </Stack>
           </Stack>
-
-          <Button
-            component={RouterLink}
-            href={paths.marketing.caseStudies}
-            size="large"
-            color="inherit"
-            variant="outlined"
-            endIcon={<Iconify icon="carbon:chevron-right" />}
-          >
-            Check Our Work
-          </Button>
         </Grid>
       </Grid>
     </Container>

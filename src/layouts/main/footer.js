@@ -60,7 +60,7 @@ export default function Footer() {
       <Logo single />
 
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
-        © 2023. All rights reserved
+        © 2024. All rights reserved
       </Typography>
     </Container>
   );
@@ -75,89 +75,45 @@ export default function Footer() {
           py: { xs: 8, md: 10 },
         }}
       >
-        <Grid container spacing={3} justifyContent={{ md: 'space-between' }}>
-          <Grid xs={12} md={4}>
-            <Stack spacing={{ xs: 3, md: 5 }}>
-              <Stack alignItems="flex-start" spacing={3}>
-                <Logo />
-
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  The starting point for your next project based on easy-to-customize Material-UI ©
-                  helps you build apps faster and better.
-                </Typography>
-              </Stack>
-
-              <Stack spacing={1} alignItems="flex-start">
-                <Typography variant="h6">Community</Typography>
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Documentation
-                </Link>
-
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Changelog
-                </Link>
-
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Contributing
-                </Link>
-              </Stack>
-
-              <Stack spacing={2}>
-                <Stack spacing={1}>
-                  <Typography variant="h6">Let’s stay in touch</Typography>
-                  <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                    Ubscribe to our newsletter to receive latest articles to your inbox weekly.
-                  </Typography>
-                </Stack>
-
-                <TextField
-                  fullWidth
-                  hiddenLabel
-                  placeholder="Email address"
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <Button variant="contained" color="inherit" size="large" sx={{ mr: -1.25 }}>
-                          Subscribe
-                        </Button>
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-              </Stack>
-
-              <Stack spacing={2}>
-                <Typography variant="h6">Social</Typography>
-                <Stack direction="row" alignItems="center">
-                  {_socials.map((social) => (
-                    <IconButton key={social.value} color="primary">
-                      <Iconify icon={social.icon} />
-                    </IconButton>
-                  ))}
-                </Stack>
-              </Stack>
-
-              <Stack spacing={2}>
-                <Typography variant="h6">Apps</Typography>
-                <AppStoreButton />
-              </Stack>
+        <Grid container spacing={3} justifyContent="space-between">
+          {/* Logo and Slogan */}
+          <Grid item xs={12} md={6}>
+            <Stack spacing={3} alignItems="flex-start">
+              <Logo />
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                The perfect partner for your digital journey, helping you succeed in web, mobile,
+                and beyond.
+              </Typography>
+            </Stack>
+            <Stack spacing={2} direction="row" alignItems="center">
+              <Typography variant="h6">Social</Typography>
+              <Link href="https://www.linkedin.com/company/voyage-vibes/">
+                <IconButton color="primary">
+                  <Iconify icon="mdi:linkedin" />
+                </IconButton>
+              </Link>
             </Stack>
           </Grid>
 
-          <Grid xs={12} md={6}>
-            {mdUp ? (
-              <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {renderLists.map((list) => (
-                  <ListDesktop key={list.subheader} list={list} />
-                ))}
-              </Masonry>
-            ) : (
-              <Stack spacing={1.5}>
-                {renderLists.map((list) => (
-                  <ListMobile key={list.subheader} list={list} />
-                ))}
+          {/* Quick Links and Social */}
+          <Grid item xs={12} md={6}>
+            <Stack spacing={{ xs: 3, md: 5 }} alignItems={{ xs: 'flex-start', md: 'flex-end' }}>
+              <Stack spacing={1} alignItems="flex-start">
+                <Typography variant="h6">Quick Links</Typography>
+                <Link variant="body2" sx={{ color: 'text.primary' }}>
+                  About
+                </Link>
+                <Link variant="body2" sx={{ color: 'text.primary' }}>
+                  Services
+                </Link>
+                <Link variant="body2" sx={{ color: 'text.primary' }}>
+                  Home
+                </Link>
+                <Link variant="body2" sx={{ color: 'text.primary' }}>
+                  Contact Us
+                </Link>
               </Stack>
-            )}
+            </Stack>
           </Grid>
         </Grid>
       </Container>
@@ -172,18 +128,8 @@ export default function Footer() {
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2023. All rights reserved
+            © 2023 Voyage Vibs. All rights reserved.
           </Typography>
-
-          <Stack direction="row" spacing={3} justifyContent="center">
-            <Link variant="caption" sx={{ color: 'text.secondary' }}>
-              Help Center
-            </Link>
-
-            <Link variant="caption" sx={{ color: 'text.secondary' }}>
-              Terms of Service
-            </Link>
-          </Stack>
         </Stack>
       </Container>
     </>

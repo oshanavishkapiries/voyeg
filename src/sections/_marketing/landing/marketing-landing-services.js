@@ -20,28 +20,28 @@ const COLORS = ['primary', 'secondary', 'success', 'warning'];
 
 const SERVICES = [
   {
-    name: 'SEO',
-    icon: '/assets/icons/service/ic_service_seo.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: 'Mobile Development',
+    icon: '/img/services/mobile.svg',
+    content: 'Crafting intuitive and powerful mobile applications tailored to your business needs.',
+    path: '/services',
   },
   {
-    name: 'Email Marketing',
-    icon: '/assets/icons/service/ic_service_mail.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: 'Web Development',
+    icon: '/img/services/web.svg',
+    content: 'Building high-performance websites that offer seamless user experiences and scalability.',
+    path: '/services',
   },
   {
-    name: 'Search Engine Oprimization',
-    icon: '/assets/icons/service/ic_service_analysis.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: 'SEO Optimization',
+    icon: '/img/services/seo.svg',
+    content: 'Enhancing your search engine visibility to drive organic traffic and grow your audience.',
+    path: '/services',
   },
   {
-    name: 'Social Marketing',
-    icon: '/assets/icons/service/ic_service_bullhorn.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: 'Digital Marketing',
+    icon: '/img/services/marketing.svg',
+    content: 'Empowering your brand with targeted digital strategies to increase online engagement.',
+    path: '/services',
   },
 ];
 
@@ -67,10 +67,11 @@ export default function MarketingLandingServices() {
           Our Services
         </Typography>
 
-        <Typography variant="h2">We Provide</Typography>
+        <Typography variant="h2">Empowering Your Digital Presence</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          At Voyage Vibs, we provide a comprehensive suite of digital solutions to help your business 
+          thrive in the modern landscape. From development to marketing, we’re here to elevate your brand.
         </Typography>
       </Stack>
 

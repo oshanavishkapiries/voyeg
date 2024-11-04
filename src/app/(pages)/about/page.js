@@ -3,7 +3,7 @@ import MarketingAboutView from 'src/sections/_marketing/view/marketing-about-vie
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Marketing: About us',
+  title: 'About us',
 };
 
 export default function MarketingAboutPage() {

@@ -42,8 +42,8 @@ export default function MarketingOurClients({ brands }) {
             key={brand.id}
             src={brand.image}
             sx={{
-              width: 106,
-              height: 32,
+              width: 150,
+              height: 50,
               color: 'text.disabled',
             }}
           />

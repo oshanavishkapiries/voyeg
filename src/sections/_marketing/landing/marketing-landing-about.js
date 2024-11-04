@@ -10,24 +10,26 @@ import { fShortenNumber } from 'src/utils/format-number';
 
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
 const ROWS = [
   {
-    label: 'projects',
-    total: 20,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    label: 'successful projects',
+    total: 5,
+    content:
+      'Our team has delivered impactful solutions across mobile, web, SEO, and digital marketing.',
   },
   {
-    label: 'Happy clients',
-    total: 32000,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    label: 'happy clients',
+    total: 50,
+    content: 'Voyage Vibs is trusted by clients globally to enhance their digital footprint.',
   },
   {
     label: 'years of experience',
-    total: 20,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    total: 3,
+    content: 'With a decade in the industry, we bring unparalleled expertise to every project.',
   },
 ];
 
@@ -64,28 +66,33 @@ export default function MarketingLandingAbout() {
           }}
         >
           <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-            About us
+            About Us
           </Typography>
 
           <Typography variant="h2" sx={{ my: 3 }}>
-            Who We Are
+            Your Digital Growth Partner
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            In hac habitasse platea dictumst. Aliquam lobortis. Lorem ipsum dolor sit amet,
-            consectetuer adipiscing elit. In dui magna, posuere eget, vestibulum et, tempor auctor,
-            justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas.
+            At Voyage Vibs, we specialize in crafting customized solutions that drive growth in the
+            digital age. From mobile and web development to SEO and digital marketing, we leverage
+            the latest technology and best practices to help businesses thrive online. Our team is
+            passionate about innovation and dedicated to delivering results that exceed
+            expectations.
           </Typography>
 
-          <Button
-            size="large"
-            color="inherit"
-            endIcon={<Iconify icon="carbon:chevron-right" />}
-            sx={{ my: 5 }}
-          >
-            Lean more
-          </Button>
+          <Link href="/about">
+            <Button
+              size="large"
+              color="inherit"
+              endIcon={<Iconify icon="carbon:chevron-right" />}
+              sx={{ my: 5 }}
+            >
+              Learn more
+            </Button>
+          </Link>
+
+          
         </Grid>
 
         <Grid xs={12} md={6}>

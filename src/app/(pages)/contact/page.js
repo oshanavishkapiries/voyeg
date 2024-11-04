@@ -3,7 +3,7 @@ import MarketingContactView from 'src/sections/_marketing/view/marketing-contact
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Marketing: Contact us',
+  title: 'Contact us',
 };
 
 export default function MarketingContactPage() {

@@ -4,7 +4,7 @@ import MarketingLandingView from 'src/sections/_marketing/view/marketing-landing
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'The starting point for your next project',
+  title: 'Voyage Vibs',
 };
 
 export default function HomePage() {

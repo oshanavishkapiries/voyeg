@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
@@ -18,10 +18,10 @@ import CountUp from 'src/components/count-up';
 const COLORS = ['primary', 'secondary', 'warning', 'success'];
 
 const SUMMARY = [
-  { title: 'Years of experience', total: 12, icon: 'carbon:increase-level' },
-  { title: 'Awards', total: 20, icon: 'carbon:trophy' },
-  { title: 'Projects', total: 150, icon: 'carbon:data-vis-4' },
-  { title: 'Happy clients', total: 32000, icon: 'carbon:user-certification' },
+  { title: 'Years of Expertise', total: 3, icon: 'carbon:increase-level' },
+  { title: 'Awards', total: 1, icon: 'carbon:trophy' },
+  { title: 'Projects Delivered', total: 5, icon: 'carbon:data-vis-4' },
+  { title: 'Satisfied Clients', total: 50, icon: 'carbon:user-certification' },
 ];
 
 // ----------------------------------------------------------------------
@@ -80,26 +80,28 @@ export default function MarketingAbout() {
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          <Typography variant="h2">Who We Are?</Typography>
+          <Typography variant="h2">Who We Are</Typography>
 
           <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-            Vivamus consectetuer hendrerit lacus. Curabitur a felis in nunc fringilla tristique.
-            Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.
+            At Voyage Vibs, we are dedicated to transforming ideas into impactful digital solutions.
+            With a team of seasoned professionals, we bring creativity, expertise, and innovation to 
+            each project. We pride ourselves on delivering outstanding results for our clients, helping 
+            them achieve their goals through top-notch web development, mobile solutions, SEO, and digital 
+            marketing strategies.
             <br />
             <br />
-            Nam pretium turpis et arcu. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-            dignissim dolor, a pretium mi sem ut ipsum. Praesent venenatis metus at tortor pulvinar
-            varius.
+            We strive to make every project a success, building lasting partnerships and leaving a positive 
+            mark in the digital world. Let’s embark on this journey together and turn visions into reality.
           </Typography>
 
-          <Button
+          {/* <Button
             variant="outlined"
             color="inherit"
             size="large"
             endIcon={<Iconify icon="carbon:chevron-right" />}
           >
             Check Our Work
-          </Button>
+          </Button> */}
         </Grid>
       </Grid>
 

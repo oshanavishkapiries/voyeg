@@ -8,34 +8,28 @@ import SvgColor from 'src/components/svg-color';
 
 const SERVICES = [
   {
-    title: 'Search Engine Optimization',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_statistics.svg',
+    title: 'Web Development',
+    description:
+      'Create stunning and functional websites that elevate your brand and engage your audience effectively.',
+    icon: '/img/services/web.svg', // Ensure this icon path is correct
   },
   {
-    title: 'Social Media Strategy',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_social_media.svg',
+    title: 'Mobile Development',
+    description:
+      'Design and develop user-friendly mobile applications tailored to meet your business needs and enhance user experience.',
+    icon: '/img/services/mobile.svg', // Ensure this icon path is correct
   },
   {
-    title: 'Real Time and Data',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_real_time.svg',
+    title: 'Search Engine Optimization (SEO)',
+    description:
+      'Optimize your online presence to improve visibility, attract organic traffic, and boost search engine rankings.',
+    icon: '/img/services/seo.svg', // Ensure this icon path is correct
   },
   {
-    title: 'Online Media Management',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_checklist.svg',
-  },
-  {
-    title: 'Reporting & Analysis',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_report.svg',
-  },
-  {
-    title: 'Penalty Recovery',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    icon: '/assets/icons/ic_file.svg',
+    title: 'Digital Marketing',
+    description:
+      'Leverage digital channels to promote your brand and drive measurable results through targeted marketing strategies.',
+    icon: '/img/services/marketing.svg', // Ensure this icon path is correct
   },
 ];
 
@@ -50,19 +44,7 @@ export default function MarketingServicesInclude() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      <Typography variant="h2">Services Include</Typography>
-
-      <Typography
-        sx={{
-          mt: 3,
-          mx: 'auto',
-          maxWidth: 480,
-          color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
-        }}
-      >
-        Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
-      </Typography>
+      <Typography variant="h2">Our Services</Typography>
 
       <Box
         sx={{
@@ -72,29 +54,34 @@ export default function MarketingServicesInclude() {
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',
             sm: 'repeat(2, 1fr)',
-            md: 'repeat(3, 1fr)',
+            md: 'repeat(2, 1fr)',
           },
         }}
       >
-        {SERVICES.map((value) => (
-          <div key={value.title}>
+        {SERVICES.map((service) => (
+          <Box
+            key={service.title}
+            sx={{ textAlign: 'center', p: 3, boxShadow: 3, borderRadius: 2 }}
+          >
             <SvgColor
-              src={value.icon}
+              src={service.icon}
               color="info"
               sx={{
                 width: 64,
                 height: 64,
                 mx: 'auto',
                 bgcolor: 'primary.main',
+                borderRadius: '50%',
+                p: 1.5,
               }}
             />
 
-            <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
-              {value.title}
+            <Typography variant="h5" sx={{ mt: 3, mb: 2 }}>
+              {service.title}
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
-          </div>
+            <Typography sx={{ color: 'text.secondary' }}>{service.description}</Typography>
+          </Box>
         ))}
       </Box>
     </Container>

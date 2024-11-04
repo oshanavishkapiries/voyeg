@@ -8,9 +8,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { alpha, useTheme } from '@mui/material/styles';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
-
 import { useResponsive } from 'src/hooks/use-responsive';
-
 import { bgGradient } from 'src/theme/css';
 
 // ----------------------------------------------------------------------
@@ -18,27 +16,27 @@ import { bgGradient } from 'src/theme/css';
 const TIMELINES = [
   {
     step: 'STEP 1',
-    title: 'Planning',
+    title: 'Consultation',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'We begin with a thorough consultation to understand your business goals and digital marketing needs.',
   },
   {
     step: 'STEP 2',
-    title: 'Research',
+    title: 'Strategy Development',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Our team crafts a tailored strategy that includes web development, SEO, and social media planning to maximize your online presence.',
   },
   {
     step: 'STEP 3',
-    title: 'Optimizing',
+    title: 'Implementation',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'We execute the strategy with precision, focusing on quality development and effective marketing techniques.',
   },
   {
     step: 'STEP 4',
-    title: 'Results',
+    title: 'Analysis & Optimization',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'We analyze the results and optimize your strategies for continuous improvement, ensuring long-term success.',
   },
 ];
 
@@ -48,7 +46,6 @@ const COLORS = ['primary', 'secondary', 'warning', 'success'];
 
 export default function MarketingServicesHowItWork() {
   const theme = useTheme();
-
   const mdUp = useResponsive('up', 'md');
 
   return (
@@ -64,7 +61,7 @@ export default function MarketingServicesHowItWork() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          How It Works
+          How Voyage Vibs Works
         </Typography>
 
         <Typography
@@ -77,7 +74,7 @@ export default function MarketingServicesHowItWork() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          Our process is designed to deliver tailored solutions for your business. From consultation to ongoing analysis, we are committed to your success.
         </Typography>
 
         <Timeline position={mdUp ? 'alternate' : 'right'}>

@@ -51,13 +51,14 @@ export default function MarketingLandingProcess() {
         }}
       >
         <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          Work Flow
+          Our Expertise
         </Typography>
 
-        <Typography variant="h2">Working Process</Typography>
+        <Typography variant="h2">Our Process</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          At Voyage Vibs, we guide you through every step, from innovative web and mobile solutions
+          to optimizing your digital reach and presence.
         </Typography>
       </Stack>
 

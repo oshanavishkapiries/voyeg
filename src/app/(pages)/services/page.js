@@ -3,7 +3,7 @@ import MarketingServicesView from 'src/sections/_marketing/view/marketing-servic
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Marketing: Services',
+  title: 'Services',
 };
 
 export default function MarketingServicesPage() {

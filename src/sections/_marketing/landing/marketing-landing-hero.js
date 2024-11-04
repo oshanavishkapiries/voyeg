@@ -50,7 +50,7 @@ export default function MarketingLandingHero() {
             }}
           >
             <Typography variant="overline" sx={{ color: 'secondary.main' }}>
-              SOFTWARE COMPANY AND
+              SOFTWARE COMPANY
             </Typography>
 
             <Typography variant="h3" sx={{ my: 3 }}>

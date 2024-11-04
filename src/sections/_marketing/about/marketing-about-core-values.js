@@ -9,22 +9,22 @@ import SvgColor from 'src/components/svg-color';
 const CORE_VALUES = [
   {
     title: 'Customer Satisfaction',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    description: 'Our clients’ needs drive every solution we craft, ensuring their success and satisfaction.',
     icon: '/assets/icons/ic_agreement.svg',
   },
   {
     title: 'Transparency',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    description: 'We believe in open communication and honesty to foster trust with every client and partner.',
     icon: '/assets/icons/ic_transparency.svg',
   },
   {
     title: 'Reputation',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    description: 'Building a trusted name through quality and reliability in every project we deliver.',
     icon: '/assets/icons/ic_reputation.svg',
   },
   {
-    title: 'Cooperation',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    title: 'Collaboration',
+    description: 'Working hand-in-hand with clients, we value teamwork to achieve shared goals.',
     icon: '/assets/icons/ic_popularity.svg',
   },
 ];

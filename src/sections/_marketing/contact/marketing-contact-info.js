@@ -22,7 +22,7 @@ export default function MarketingContactInfo() {
         />
       )}
 
-      <Stack spacing={2} direction="row" alignItems="flex-start">
+      {/* <Stack spacing={2} direction="row" alignItems="flex-start">
         <Iconify icon="carbon:location" width={28} />
 
         <Stack spacing={0.5}>
@@ -36,32 +36,32 @@ export default function MarketingContactInfo() {
 
           <Typography variant="body2">508 Bridle Avenue Newnan, GA 30263e</Typography>
         </Stack>
-      </Stack>
+      </Stack> */}
 
-      <Stack spacing={2} alignItems="flex-start" direction="row">
+      {/* <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:mobile" />
         <Stack spacing={0.5}>
           <Typography variant="h6">Call us</Typography>
         </Stack>
-      </Stack>
+      </Stack> */}
 
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:email" />
         <Stack spacing={0.5}>
           <Typography variant="h6">Talk to us</Typography>
           <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-            hello@example.com
+            info@voyagevibes.life
           </Link>
         </Stack>
       </Stack>
 
-      <Stack spacing={2} alignItems="flex-start" direction="row">
+      {/* <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:time" />
         <Stack spacing={0.5}>
           <Typography variant="h6">Working Hours</Typography>
           <Typography variant="body2">Mon-Fri: 9 am — 6 pm</Typography>
         </Stack>
-      </Stack>
+      </Stack> */}
     </Stack>
   );
 }
