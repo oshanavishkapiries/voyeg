@@ -19,7 +19,7 @@ const COLORS = ['primary', 'secondary', 'warning', 'success'];
 
 const SUMMARY = [
   { title: 'Years of Expertise', total: 3, icon: 'carbon:increase-level' },
-  { title: 'Awards', total: 1, icon: 'carbon:trophy' },
+  // { title: 'Awards', total: 1, icon: 'carbon:trophy' },
   { title: 'Projects Delivered', total: 5, icon: 'carbon:data-vis-4' },
   { title: 'Satisfied Clients', total: 50, icon: 'carbon:user-certification' },
 ];
@@ -83,7 +83,7 @@ export default function MarketingAbout() {
           <Typography variant="h2">Who We Are</Typography>
 
           <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-            At Voyage Vibs, we are dedicated to transforming ideas into impactful digital solutions.
+            At Voyage Vibes, we are dedicated to transforming ideas into impactful digital solutions.
             With a team of seasoned professionals, we bring creativity, expertise, and innovation to 
             each project. We pride ourselves on delivering outstanding results for our clients, helping 
             them achieve their goals through top-notch web development, mobile solutions, SEO, and digital 
@@ -114,7 +114,7 @@ export default function MarketingAbout() {
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',
             sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
+            md: 'repeat(3, 1fr)',
           },
         }}
       >

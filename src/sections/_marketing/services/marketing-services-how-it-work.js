@@ -61,7 +61,7 @@ export default function MarketingServicesHowItWork() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          How Voyage Vibs Works
+          How Voyage Vibes Works
         </Typography>
 
         <Typography

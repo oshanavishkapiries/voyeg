@@ -24,7 +24,7 @@ const ROWS = [
   {
     label: 'happy clients',
     total: 50,
-    content: 'Voyage Vibs is trusted by clients globally to enhance their digital footprint.',
+    content: 'Voyage Vibes is trusted by clients globally to enhance their digital footprint.',
   },
   {
     label: 'years of experience',
@@ -74,7 +74,7 @@ export default function MarketingLandingAbout() {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            At Voyage Vibs, we specialize in crafting customized solutions that drive growth in the
+            At Voyage Vibes, we specialize in crafting customized solutions that drive growth in the
             digital age. From mobile and web development to SEO and digital marketing, we leverage
             the latest technology and best practices to help businesses thrive online. Our team is
             passionate about innovation and dedicated to delivering results that exceed

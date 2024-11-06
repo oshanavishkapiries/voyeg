@@ -128,14 +128,16 @@ export default function Footer() {
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2023 Voyage Vibs. All rights reserved.
+            © 2024 Voyage Vibes. All rights reserved.
           </Typography>
         </Stack>
       </Container>
     </>
   );
 
-  return <footer>{isHome ? simpleFooter : mainFooter}</footer>;
+  // return <footer>{isHome ? simpleFooter : mainFooter}</footer>;
+
+    return <footer>{mainFooter}</footer>;
 }
 
 // ----------------------------------------------------------------------

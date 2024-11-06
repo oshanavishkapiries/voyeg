@@ -57,7 +57,7 @@ export default function MarketingLandingProcess() {
         <Typography variant="h2">Our Process</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          At Voyage Vibs, we guide you through every step, from innovative web and mobile solutions
+          At Voyage Vibes, we guide you through every step, from innovative web and mobile solutions
           to optimizing your digital reach and presence.
         </Typography>
       </Stack>

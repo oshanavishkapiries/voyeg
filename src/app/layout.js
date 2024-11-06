@@ -16,7 +16,7 @@ import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Voyage Vibs',
+  title: 'Voyage Vibes',
   description:
     '',
   keywords: 'react,material,kit,application,dashboard,admin,template',

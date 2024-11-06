@@ -70,7 +70,7 @@ export default function MarketingLandingServices() {
         <Typography variant="h2">Empowering Your Digital Presence</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          At Voyage Vibs, we provide a comprehensive suite of digital solutions to help your business 
+          At Voyage Vibes, we provide a comprehensive suite of digital solutions to help your business 
           thrive in the modern landscape. From development to marketing, we’re here to elevate your brand.
         </Typography>
       </Stack>

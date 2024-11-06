@@ -14,7 +14,7 @@ export default function MarketingServices() {
     >
       <Grid container spacing={3} justifyContent="space-between" alignItems="center">
         <Grid xs={12} md={6} lg={5}>
-          <Image alt="Voyage Vibs Services" src="/assets/illustrations/illustration_services.svg" />
+          <Image alt="Voyage Vibes Services" src="/assets/illustrations/illustration_services.svg" />
         </Grid>
 
         <Grid xs={12} md={6} lg={6}>
@@ -22,7 +22,7 @@ export default function MarketingServices() {
             <Typography variant="h2">Our Comprehensive Digital Services</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              At Voyage Vibs, we specialize in delivering innovative web and mobile development solutions. 
+              At Voyage Vibes, we specialize in delivering innovative web and mobile development solutions. 
               Our expertise in search engine optimization and digital marketing ensures your business stands out 
               in the competitive digital landscape. Partner with us to elevate your brand and achieve your goals!
             </Typography>
